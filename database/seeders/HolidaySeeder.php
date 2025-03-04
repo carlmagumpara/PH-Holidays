@@ -13,6 +13,8 @@ class HolidaySeeder extends Seeder
      */
     public function run(): void
     {
+        Holiday::truncate();
+
         $holidays = [
             "2009" => [
                 "regular_holidays" => [
@@ -31,7 +33,10 @@ class HolidaySeeder extends Seeder
                 ],
                 "special_holidays" => [
                     ["event" => "Chinese New Year", "date" => "2009-01-26"],
-                    ["event" => "EDSA People Power Revolution", "date" => "2009-02-25"],
+                    [
+                        "event" => "EDSA People Power Revolution",
+                        "date" => "2009-02-25",
+                    ],
                     ["event" => "Black Saturday", "date" => "2009-04-11"],
                     ["event" => "All Saints\' Day", "date" => "2009-11-01"],
                     ["event" => "All Souls\' Day", "date" => "2009-11-02"],
@@ -56,7 +61,10 @@ class HolidaySeeder extends Seeder
                 ],
                 "special_holidays" => [
                     ["event" => "Chinese New Year", "date" => "2010-02-14"],
-                    ["event" => "EDSA People Power Revolution", "date" => "2010-02-22"],
+                    [
+                        "event" => "EDSA People Power Revolution",
+                        "date" => "2010-02-22",
+                    ],
                     ["event" => "Black Saturday", "date" => "2010-04-03"],
                     ["event" => "All Saints\' Day", "date" => "2010-11-01"],
                     ["event" => "All Souls\' Day", "date" => "2010-11-02"],
@@ -81,7 +89,10 @@ class HolidaySeeder extends Seeder
                 ],
                 "special_holidays" => [
                     ["event" => "Chinese New Year", "date" => "2011-02-03"],
-                    ["event" => "EDSA People Power Revolution", "date" => "2011-02-25"],
+                    [
+                        "event" => "EDSA People Power Revolution",
+                        "date" => "2011-02-25",
+                    ],
                     ["event" => "Black Saturday", "date" => "2011-04-23"],
                     ["event" => "All Saints\' Day", "date" => "2011-11-01"],
                     ["event" => "All Souls\' Day", "date" => "2011-11-02"],
@@ -106,7 +117,10 @@ class HolidaySeeder extends Seeder
                 ],
                 "special_holidays" => [
                     ["event" => "Chinese New Year", "date" => "2012-01-23"],
-                    ["event" => "EDSA People Power Revolution", "date" => "2012-02-25"],
+                    [
+                        "event" => "EDSA People Power Revolution",
+                        "date" => "2012-02-25",
+                    ],
                     ["event" => "Black Saturday", "date" => "2012-04-07"],
                     ["event" => "All Saints\' Day", "date" => "2012-11-01"],
                     ["event" => "All Souls\' Day", "date" => "2012-11-02"],
@@ -131,7 +145,10 @@ class HolidaySeeder extends Seeder
                 ],
                 "special_holidays" => [
                     ["event" => "Chinese New Year", "date" => "2013-02-10"],
-                    ["event" => "EDSA People Power Revolution", "date" => "2013-02-25"],
+                    [
+                        "event" => "EDSA People Power Revolution",
+                        "date" => "2013-02-25",
+                    ],
                     ["event" => "Black Saturday", "date" => "2013-03-30"],
                     ["event" => "All Saints\' Day", "date" => "2013-11-01"],
                     ["event" => "All Souls\' Day", "date" => "2013-11-02"],
@@ -156,7 +173,10 @@ class HolidaySeeder extends Seeder
                 ],
                 "special_holidays" => [
                     ["event" => "Chinese New Year", "date" => "2014-01-31"],
-                    ["event" => "EDSA People Power Revolution", "date" => "2014-02-25"],
+                    [
+                        "event" => "EDSA People Power Revolution",
+                        "date" => "2014-02-25",
+                    ],
                     ["event" => "Black Saturday", "date" => "2014-04-19"],
                     ["event" => "All Saints\' Day", "date" => "2014-11-01"],
                     ["event" => "All Souls\' Day", "date" => "2014-11-02"],
@@ -181,7 +201,10 @@ class HolidaySeeder extends Seeder
                 ],
                 "special_holidays" => [
                     ["event" => "Chinese New Year", "date" => "2015-02-19"],
-                    ["event" => "EDSA People Power Revolution", "date" => "2015-02-25"],
+                    [
+                        "event" => "EDSA People Power Revolution",
+                        "date" => "2015-02-25",
+                    ],
                     ["event" => "Black Saturday", "date" => "2015-04-04"],
                     ["event" => "All Saints\' Day", "date" => "2015-11-01"],
                     ["event" => "All Souls\' Day", "date" => "2015-11-02"],
@@ -206,7 +229,10 @@ class HolidaySeeder extends Seeder
                 ],
                 "special_holidays" => [
                     ["event" => "Chinese New Year", "date" => "2016-02-08"],
-                    ["event" => "EDSA People Power Revolution", "date" => "2016-02-25"],
+                    [
+                        "event" => "EDSA People Power Revolution",
+                        "date" => "2016-02-25",
+                    ],
                     ["event" => "Black Saturday", "date" => "2016-03-26"],
                     ["event" => "All Saints\' Day", "date" => "2016-11-01"],
                     ["event" => "All Souls\' Day", "date" => "2016-11-02"],
@@ -231,7 +257,10 @@ class HolidaySeeder extends Seeder
                 ],
                 "special_holidays" => [
                     ["event" => "Chinese New Year", "date" => "2017-01-28"],
-                    ["event" => "EDSA People Power Revolution", "date" => "2017-02-25"],
+                    [
+                        "event" => "EDSA People Power Revolution",
+                        "date" => "2017-02-25",
+                    ],
                     ["event" => "Black Saturday", "date" => "2017-04-15"],
                     ["event" => "All Saints\' Day", "date" => "2017-11-01"],
                     ["event" => "All Souls\' Day", "date" => "2017-11-02"],
@@ -320,7 +349,10 @@ class HolidaySeeder extends Seeder
                 ],
                 "special_holidays" => [
                     ["event" => "Chinese New Year", "date" => "2020-01-25"],
-                    ["event" => "EDSA People Power Revolution", "date" => "2020-02-25"],
+                    [
+                        "event" => "EDSA People Power Revolution",
+                        "date" => "2020-02-25",
+                    ],
                     ["event" => "Black Saturday", "date" => "2020-04-11"],
                     ["event" => "All Saints\' Day", "date" => "2020-11-01"],
                     ["event" => "All Souls\' Day", "date" => "2020-11-02"],
@@ -345,7 +377,10 @@ class HolidaySeeder extends Seeder
                 ],
                 "special_holidays" => [
                     ["event" => "Chinese New Year", "date" => "2021-02-12"],
-                    ["event" => "EDSA People Power Revolution", "date" => "2021-02-25"],
+                    [
+                        "event" => "EDSA People Power Revolution",
+                        "date" => "2021-02-25",
+                    ],
                     ["event" => "Black Saturday", "date" => "2021-04-03"],
                     ["event" => "All Saints\' Day", "date" => "2021-11-01"],
                     ["event" => "All Souls\' Day", "date" => "2021-11-02"],
@@ -563,11 +598,15 @@ class HolidaySeeder extends Seeder
         ];
 
         foreach ($holidays as $key => $value) {
-            foreach ($value['regular_holidays'] as $reg) {
-                Holiday::create(array_merge($reg, ['type' => 'Regular Holiday']));
+            foreach ($value["regular_holidays"] as $reg) {
+                Holiday::create(
+                    array_merge($reg, ["type" => "Regular Holiday"])
+                );
             }
-            foreach ($value['special_holidays'] as $spe) {
-                Holiday::create(array_merge($reg, ['type' => 'Special Holiday']));
+            foreach ($value["special_holidays"] as $spe) {
+                Holiday::create(
+                    array_merge($spe, ["type" => "Special Holiday"])
+                );
             }
         }
     }
