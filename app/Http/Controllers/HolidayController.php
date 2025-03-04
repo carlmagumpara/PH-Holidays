@@ -9,7 +9,7 @@ class HolidayController extends Controller
 {
     public function index(Request $request)
     {
-        if($request->has('order_by') && $request->order_by && !in_array($request->order_by, ['ASC', 'DESC'])) {
+        if($request->has('order_by') && $request->order_by && !in_array(strtoupper($request->order_by), ['ASC', 'DESC'])) {
             return response()->json([
                 'result' => 'error',
                 'message' => 'The order_by parameter should be either ASC or DESC.',
