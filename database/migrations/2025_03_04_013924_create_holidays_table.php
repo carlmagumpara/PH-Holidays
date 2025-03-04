@@ -16,6 +16,7 @@ return new class extends Migration
             $table->text('event');
             $table->date('date');
             $table->string('type');
+            $table->string('country_code');
             $table->timestamps();
         });
     }

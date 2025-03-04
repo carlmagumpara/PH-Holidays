@@ -13,6 +13,7 @@ class Holiday extends Model
         'event',
         'date',
         'type',
+        'country_code'
     ];
 
     protected static function boot()

@@ -597,15 +597,26 @@ class HolidaySeeder extends Seeder
             ],
         ];
 
+        // "Public Holiday",
+        // "Special Non-Working Holiday",
+        // "Special Working Holiday",
+        // "Religious Holiday",
+        // "Observance",
+        // "Bank Holiday",
+        // "Regional Holiday",
+        // "Corporate Holiday",
+        // "International Holiday"
+
+
         foreach ($holidays as $key => $value) {
             foreach ($value["regular_holidays"] as $reg) {
                 Holiday::create(
-                    array_merge($reg, ["type" => "Regular Holiday"])
+                    array_merge($reg, ["type" => "Regular Holiday", "country_code" => "PH"])
                 );
             }
             foreach ($value["special_holidays"] as $spe) {
                 Holiday::create(
-                    array_merge($spe, ["type" => "Special Holiday"])
+                    array_merge($spe, ["type" => "Special Holiday", "country_code" => "PH"])
                 );
             }
         }

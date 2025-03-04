@@ -12,8 +12,8 @@ class HolidayController extends Controller
         if($request->has('order_by') && $request->order_by && !in_array($request->order_by, ['ASC', 'DESC'])) {
             return response()->json([
                 'result' => 'error',
-                'message' => 'The provided order_by should ASC or DESC only.',
-            ], 200);
+                'message' => 'The order_by parameter should be either ASC or DESC.',
+            ], 400);
         }
 
         $holiday = Holiday::orderBy('date', $request->order_by ?? 'DESC');
