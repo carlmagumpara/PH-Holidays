@@ -24,6 +24,10 @@ class HolidayController extends Controller
             $holiday->whereYear('date', date('Y'));
         }
 
+        if($request->has('country_code') && $request->country_code) {
+            $holiday->where(['country_code' => $request->country_code]);
+        }
+
         return response()->json([
             'result' => 'success',
             'data' => $holiday->get()
