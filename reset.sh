@@ -10,3 +10,6 @@ php artisan migrate --force
 php artisan optimize
 php artisan storage:link
 php artisan db:seed --class=HolidaySeeder  --force
+
+
+# https://ph-holidays.laravel.cloud/api/holidays?year=2025
