@@ -13,6 +13,8 @@ class HolidayController extends Controller
 
         if($request->has('year') && $request->year) {
             $holiday->whereYear('date', $request->year);
+        } else {
+            $holiday->whereYear('date', date('Y'));
         }
 
         return $holiday->get();
